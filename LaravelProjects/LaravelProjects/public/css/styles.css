@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.maincontainer{
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.sidebar{
+    height: 100%;
+    background-color: #165d38;
+    width: 15%;
+    box-shadow: 3px 5px 5px #969696;
+    z-index: 1;
+}
+
+.sidebar .img{
+    background-color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.sidebar .img h1{
+    color: #165d38;
+}
+
+.sidebar .nav ul{
+    list-style-type: none;
+}
+
+.sidebar .nav li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.sidebar .nav li a:hover{
+    background-color: #ffffff65;
+}
+
+.sidebar .manageOrders{
+    display: none;
+    margin-left: 16px;
+}
+
+.sidebar .manageOrders.open{
+    display: block;
+}
+
+
+.container{
+    height: 100%;
+    width: 85%;
+}
+
+.container .topbar{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.container .topbar .btnss{
+    display: flex;
+    gap: 10px;
+}
+
+.container .topbar button{
+    background-color: white;
+    color:#165d38;
+    border-radius: 20px;
+    border: 1px solid #165d38;
+    padding: 10px 14px;
+}
+
+.container .topbar .btn{
+    background-color: #165d38;
+    color: white;
+}
+
+.container .topbar .btn:hover{
+    background-color: #189722;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+
+.section {
+    background: #fff;
+    padding: 30px 14px;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px #0000001a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #189722;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Numbers */
+.section div:first-child p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #050607;
+}
+
+/* Labels */
+.section div:first-child p:last-child {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Logo/icon area */
+.section div:last-child {
+    font-size: 30px;
+    color: #189722;
+}
+
+
+.table{
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px #0000001a;
+    padding:10px;
+}
+
+.table h3{
+    padding: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.table table{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    padding: 10px;
+}
+
+
+.table tr:nth-child(even){
+    background-color: #f0f0f0;
+}

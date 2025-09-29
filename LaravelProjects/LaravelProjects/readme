@@ -1,0 +1,10 @@
+## Installation
+git clone <repo>
+cd project-folder
+composer install  // run: composer update ,if it shows error and also disable antivirus if again error comes cause antivirus sometimes disables SSL certificate // 
+npm install && npm run dev
+
+cp .env.example .env
+php artisan key:generate
+touch database/database.mysql
+php artisan serve
